@@ -33,13 +33,14 @@ Plug('tpope/vim-fugitive')
 
 
 Plug('neovim/nvim-lspconfig')
-
+Plug('numToStr/Comment.nvim')
 vim.call('plug#end')
 
 require('fzfx').setup()
 
 require("telescope").setup()
 
+require('Comment').setup()
 -- VERY BIG HOVER
 require('hover').config({
   --- List of modules names to load as providers.
