@@ -11,7 +11,6 @@ Plug('tpope/vim-sensible')
 Plug('nvim-lua/plenary.nvim')
 Plug('nvim-telescope/telescope.nvim')
 
-Plug('nvim-treesitter/nvim-treesitter')
 Plug('mrloop/telescope-git-branch.nvim')
 Plug('nosduco/remote-sshfs.nvim')
 
@@ -22,8 +21,8 @@ Plug('lewis6991/hover.nvim')
 
 Plug('nuvic/flexoki-nvim')
 
-Plug('nvim-treesitter/nvim-treesitter')
-Plug('nvim-treesitter/playground')
+-- Plug('nvim-treesitter/nvim-treesitter')
+-- Plug('nvim-treesitter/playground')
 
 Plug('theprimeagen/harpoon')
 
