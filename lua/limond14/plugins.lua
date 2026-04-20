@@ -1,39 +1,29 @@
 local vim = vim
-local Plug = vim.fn['plug#']
 local builtin = ('telescope.builtin')
 
-vim.call('plug#begin')
+--vim.call('plug#begin')
 
 --List your plugins here
 
-Plug('tpope/vim-sensible')
-
-Plug('nvim-lua/plenary.nvim')
-Plug('nvim-telescope/telescope.nvim')
-
-Plug('mrloop/telescope-git-branch.nvim')
-Plug('nosduco/remote-sshfs.nvim')
-
-Plug('junegunn/fzf')
-Plug('linrongbin16/fzfx.nvim')
-
-Plug('lewis6991/hover.nvim')
-
-Plug('nuvic/flexoki-nvim')
-
+vim.pack.add({
+    'tpope/vim-sensible',
+    'nvim-telescope/telescope.nvim',
+    'nvim-lua/plenary.nvim',
+    'mrloop/telescope-git-branch.nvim',
+    'nosduco/remote-sshfs.nvim',
+    'junegunn/fzf',
+    'linrongbin16/fzfx.nvim',
+    'lewis6991/hover.nvim',
+    'nuvic/flexoki-nvim',
+    'theprimeagen/harpoon',
+    'mbbill/undotree',
+    'tpope/vim-fugitive',
+    'neovim/nvim-lspconfig'
+})
 -- Plug('nvim-treesitter/nvim-treesitter')
 -- Plug('nvim-treesitter/playground')
+-- idk why it's ther
 
-Plug('theprimeagen/harpoon')
-
-Plug('mbbill/undotree')
-
-Plug('tpope/vim-fugitive')
-
-
-Plug('neovim/nvim-lspconfig')
-
-vim.call('plug#end')
 
 require('fzfx').setup()
 
