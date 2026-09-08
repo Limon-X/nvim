@@ -18,12 +18,16 @@ vim.pack.add({
     'theprimeagen/harpoon',
     'mbbill/undotree',
     'tpope/vim-fugitive',
-    'neovim/nvim-lspconfig'
+    'neovim/nvim-lspconfig',
+    'https://github.com/mason-org/mason.nvim',
+    'https://github.com/mason-org/mason-lspconfig.nvim'
 })
 -- Plug('nvim-treesitter/nvim-treesitter')
 -- Plug('nvim-treesitter/playground')
 -- idk why it's ther
 
+require('mason').setup()
+require('mason-lspconfig').setup()
 
 require('fzfx').setup()
 
