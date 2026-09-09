@@ -20,11 +20,18 @@ vim.pack.add({
     'tpope/vim-fugitive',
     'neovim/nvim-lspconfig',
     'https://github.com/mason-org/mason.nvim',
-    'https://github.com/mason-org/mason-lspconfig.nvim'
+    'https://github.com/mason-org/mason-lspconfig.nvim',
+    'https://github.com/saghen/blink.cmp',
+    'https://github.com/saghen/blink.lib'
 })
 -- Plug('nvim-treesitter/nvim-treesitter')
 -- Plug('nvim-treesitter/playground')
 -- idk why it's ther
+
+--blink setup
+local cmp = require('blink.cmp')
+cmp.build():pwait()
+cmp.setup()
 
 require('mason').setup()
 require('mason-lspconfig').setup()
