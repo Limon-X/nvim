@@ -40,7 +40,13 @@ vim.lsp.enable('jdtls')
 --blink setup
 local cmp = require('blink.cmp')
 cmp.build():pwait()
-cmp.setup()
+cmp.setup({
+    keymap = {
+        preset = 'default',
+        ['<C-CR>'] = { 'select_and_accept', 'fallback' }
+    }
+})
+
 
     --[[
 cmp.config({

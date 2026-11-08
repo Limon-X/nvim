@@ -8,4 +8,5 @@ restart neovim and everything working!
 for lsp(language-server-protocol aka. autocompletion and other things): 
 - use `:Mason`
   - search lsp provider with `/` and install it with `i`, then reload nvim.
-  - for autocompletion use C^x(control+x) and C^o
+  - for autocompletion use C^x(control+x) and Co
+  - for accepting autocompletion use C^CR(control+enter) or C^y(control+y)
