@@ -10,6 +10,8 @@ vim.opt.expandtab = true
 
 vim.o.mousemoveevent = true
 
+vim.keymap.set("n", "<leader>w", ":write<CR>")
+
 vim.opt.clipboard = "unnamedplus"
 
 --vim.set.nofixeol = truexe
