@@ -12,4 +12,7 @@ vim.o.mousemoveevent = true
 
 vim.opt.clipboard = "unnamedplus"
 
+--vim.set.nofixeol = truexe
+
+
 vim.cmd[[colorscheme flexoki-moon]]
